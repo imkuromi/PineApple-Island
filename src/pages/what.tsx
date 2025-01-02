@@ -334,7 +334,7 @@ export default function What() {
                 }}
               >
                 <Image
-                  src="/smart.svg"
+                  src="/Good.svg"
                   alt="1"
                   width={70}
                   height={70}
