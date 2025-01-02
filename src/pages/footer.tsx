@@ -55,8 +55,9 @@ export default function Footer() {
             <Box sx={{ display: "flex", flexDirection: "row",gap:'0.1rem',height:'3rem',width:'100%' }}>
               <TextField
               fullWidth
+              multiline
                 label="Email"
-                variant="outlined"
+                
                 sx={{ fontSize:'18px',backgroundColor: "#FFF" }}
               />
               <Typography
