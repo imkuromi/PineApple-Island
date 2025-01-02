@@ -52,7 +52,7 @@ export default function Footer() {
               Keep up with our newsletter to get 
               updates aboutprojects and offers
             </Typography>
-            <Box sx={{ display: "flex", flexDirection: "row" }}>
+            <Box sx={{ display: "flex", flexDirection: "row",gap:'0.1rem',height:'3rem',width:'100%' }}>
               <TextField
               fullWidth
                 label="Email"
@@ -65,13 +65,14 @@ export default function Footer() {
                   fontSize: "18px",
                   color: "#000",
                   backgroundColor: "#FFF",
-                paddingTop:'0.75rem',
+                paddingTop:'0.50rem',
                 paddingX:'0.5rem'
                 }}
               >
                 Subscribe
               </Typography>
             </Box>
+            
           </Grid>
         </Grid>
       </Box>
