@@ -308,7 +308,7 @@ export default function What() {
                 }}
               >
                 <Image
-                  src="/eco.svg"
+                  src="/Eco.svg"
                   alt="1"
                   width={70}
                   height={70}
@@ -334,7 +334,7 @@ export default function What() {
                 }}
               >
                 <Image
-                  src="/Good.svg"
+                  src="/Smart.svg"
                   alt="1"
                   width={70}
                   height={70}
