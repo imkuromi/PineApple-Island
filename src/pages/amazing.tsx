@@ -57,7 +57,7 @@ export default function Amazing() {
     <>
       <Grid
         container
-        maxWidth={"lg"}
+        maxWidth={"xl"}
         sx={{ marginTop: "10rem", marginX: { md: "5rem", lg: "15rem" } }}
       >
         <Grid

@@ -6,7 +6,7 @@ export default function Become() {
     <>
       <Grid
         container
-        maxWidth={"lg"}
+        maxWidth={"xl"}
         sx={{ marginTop: {xs:"0rem",sm:"0rem",md:"10rem"}, marginX: { md: "5rem", lg: "15rem" } }}
       >
           <Grid

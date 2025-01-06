@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function What() {
   return (
     <section id="what">
-      <Grid container maxWidth={"lg"} sx={{ marginTop: {xs:'5rem',sm:'5rem',md:'10rem'}  }}>
+      <Grid container maxWidth={"xl"} sx={{ marginTop: {xs:'5rem',sm:'5rem',md:'10rem'}  }}>
         <Grid
           container
           size={{ xs: 12, sm: 12 }}

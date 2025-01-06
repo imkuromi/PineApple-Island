@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id="about">
-      <Grid  container maxWidth={"lg"} sx={{ marginTop: {xs:'2rem',sm:'4rem',md:'10rem'} }}>
+      <Grid  container maxWidth={"xl"} sx={{ marginTop: {xs:'2rem',sm:'4rem',md:'10rem'} }}>
         <Grid
           container
           justifyContent={"center"}

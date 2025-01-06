@@ -5,7 +5,7 @@ export default function Stay() {
   return (
     <><Grid
     container
-    maxWidth={"lg"}
+    maxWidth={"xl"}
     sx={{ marginY: {xs:"5rem",sm:"5rem",md:"10rem"}}}>
        <Grid
           container

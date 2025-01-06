@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Intro() {
   return (
     <>
-      <Grid container maxWidth={"lg"}>
+      <Grid container maxWidth={"xl"}>
         <Grid size={{ md: 3 }}>
           <Box sx={{ position: "relative" }}>
             <Box

@@ -12,7 +12,7 @@ export default function Galleries() {
   return (
     <section id='galleries'>
  
-      <Grid container maxWidth={"lg"} sx={{ marginTop:{xs:'8rem',sm:'8rem',md:'10rem'} }}>
+      <Grid container maxWidth={"xl"} sx={{ marginTop:{xs:'8rem',sm:'8rem',md:'10rem'} }}>
         <Grid
           container
           size={{ xs: 12, sm: 12 }}
