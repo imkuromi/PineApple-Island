@@ -57,7 +57,7 @@ const theme = createTheme({
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
-      <Container sx={{backgroundColor:'#FFF'}} maxWidth="xl">
+      <Container sx={{backgroundColor:'#FFF'}} maxWidth="lg">
         <Navbar />
         <Intro />
         <About />
