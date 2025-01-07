@@ -16,8 +16,6 @@ import "@fontsource/lato";
 import "@fontsource/poppins";
 
 
-
-
 const theme = createTheme({
   breakpoints: {
     values: {
