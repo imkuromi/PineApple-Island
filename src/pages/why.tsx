@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Why() {
   return (
-    <Grid container maxWidth={"xl"} sx={{ marginTop: {xs:'2rem',sm:'4rem',md:'10rem'}  }}>
+    <Grid container maxWidth={"xl"}  sx={{ marginTop: {xs:'2rem',sm:'4rem',md:'10rem'}  }}>
       <Grid
         container
         size={{ xs: 12, sm: 12 }}
