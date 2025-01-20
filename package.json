@@ -20,7 +20,8 @@
     "gotham-fonts": "^1.0.3",
     "next": "15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-material-ui-carousel": "^3.4.2"
   },
   "devDependencies": {
     "@types/node": "^20",
