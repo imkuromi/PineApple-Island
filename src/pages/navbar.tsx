@@ -3,29 +3,44 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import { IconButton } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
 function Navbar() {
   return (
     <AppBar
       position="static"
-      sx={{ boxShadow: "none", backgroundColor: "white", paddingY: "1.5rem" }}
+      sx={{ boxShadow: "none", backgroundColor: "white" }}
     >
-      <Grid container justifyContent={"center"} alignItems={"center"}>
+      <Grid
+        container
+        height="163px"
+        
+        sx={{marginX: {sm:"0rem",md:"2rem",xl:"6.25rem"}}}
+      >
         <Grid size={3}>
-          <Box sx={{color: "#0E204E"}}>
-            <Typography variant="h1" sx={{ fontSize: { xs: "24px", sm: "26px", md: "30px" } }}>
-              Pineapple<br/>Island
+          <Box  paddingTop="50px" sx={{ color: "#0E204E" }}>
+            <Typography
+              variant="h1"
+              sx={{ fontSize: { xs: "24px", sm: "26px", md: "32px" } }}
+            >
+              Pineapple
+              <br />
+              Island
             </Typography>
           </Box>
         </Grid>
-        <Grid container size={6} justifyContent={"center"}>
-          <Box sx={{display: { xs: "none", sm: "none", md: "block" },color: "#232323"}}>
+        <Grid container size={6} justifyContent="center"  paddingTop="81px">
+          <Box
+            sx={{
+              display: {xs:"none",sm: "none", md: "block" },
+              color: "#232323",
+            }}
+          >
             <Typography
               variant="subtitle1"
               component="a"
-              sx={{ padding: "2rem", fontSize: "16px" }}
+              sx={{ padding: "2rem", fontSize: {md:"18px",xl:"20px"} }}
               href="#about"
             >
               About Us
@@ -33,7 +48,7 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              sx={{ padding: "2rem", fontSize: "16px" }}
+              sx={{ padding: "2rem", fontSize: {md:"18px",xl:"20px"} }}
               href="#what"
             >
               What we do
@@ -41,31 +56,32 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              sx={{ padding: "2rem", fontSize: "16px" }}
+              sx={{ padding: "2rem", fontSize: {md:"18px",xl:"20px"} }}
               href="#galleries"
             >
               Project
             </Typography>
           </Box>
         </Grid>
-        <Grid container justifyContent={"end"} size={3}>
-          <Box sx={{
-              display: { xs: "none", sm: "none", md: "flex", lg: "flex" },
+        <Grid container size={3} justifyContent="end" sx={{paddingTop: {xs:"none",sm:"none",md:"68px",xl:"68px"}}} >
+          <Button 
+            sx={{
+              display: { xs:"none",sm: "none", md: "flex" },
+              fontSize: {md:"18px",xl:"20px"},
+              color: "#FFF",
               backgroundColor: "#0E204E",
-              paddingX: "2rem",
-              paddingY: "0.5rem",
-              marginRight: { xs: "0rem", sm: "0rem", md: "2rem", lg: "6rem" },
-              color: "#FFFFFF",
+              borderRadius: "0",
+              width: "188px",
+              height: "50px"
             }}
           >
-            <Typography variant="subtitle1" sx={{ fontSize: "16px" }} noWrap>
-              Get in Touch
-            </Typography>
-          </Box>
+            Get in Touch
+          </Button>
+
           <Box
             sx={{
-              display: { xs: "flex", sm: "flex", md: "none" },
-              justifyContent: "center",
+              display: { sm: "flex", md: "none" },
+              
             }}
           >
             <IconButton sx={{ color: "#0E204E" }}>

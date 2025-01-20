@@ -27,6 +27,9 @@ const theme = createTheme({
     },
   },
   typography: {
+    button: {
+      textTransform: 'none'
+    },
     fontFamily: [ "Playfair Display","Manrope", "Lato", "Poppins"].join(","),
     h1: {
       fontFamily: "Playfair Display",
@@ -55,17 +58,25 @@ const theme = createTheme({
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
-      <Container sx={{backgroundColor:'#FFF'}} maxWidth="xl">
+      <Container
+        maxWidth="xl"
+        sx={{
+          backgroundColor:'#FFF',
+          '&.MuiContainer-root': {
+            paddingX: { xs: '20px',lg:'0' }
+          },
+        }}
+      >
         <Navbar />
         <Intro />
-        <About />
+        {/* <About />
         <Why />
         <What />
         <Galleries />
         <Amazing />
         <Become />
         <Stay />
-        <Footer />
+        <Footer /> */}
       </Container>
     </ThemeProvider>
   );

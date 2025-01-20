@@ -44,7 +44,7 @@ export default function What() {
                 alt="1"
                 width={900}
                 height={650}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",width: "100%" }}
               />
             </Box>
             <Box sx={{ position: "relative" ,marginBottom:'10rem'}}>

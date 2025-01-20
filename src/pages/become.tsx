@@ -6,51 +6,69 @@ export default function Become() {
     <>
       <Grid
         container
-        maxWidth={"xl"}
-        sx={{ marginTop: {xs:"0rem",sm:"0rem",md:"10rem"}, marginX: { md: "5rem", lg: "15rem" } }}
+        sx={{
+          marginTop: { xs: "0rem", sm: "0rem", md: "10rem" },
+          marginX: { md: "5rem", lg: "15rem" },
+        }}
       >
-          <Grid
+        <Grid
           container
-          size={{ xs: 12,sm:12 }}
+          size={{ xs: 12, sm: 12 }}
           justifyContent={"center"}
           alignItems={"center"}
         >
-        
-            <Box
-              flexDirection={"column"}
+          <Box
+            flexDirection={"column"}
+            sx={{
+              display: { xs: "flex", sm: "flex", md: "none" },
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundColor: " #0E204E",
+              height: "350px",
+              width: "900px",
+              lineHeight: "2rem",
+            }}
+          >
+            <Typography
+              variant="h1"
               sx={{
-                display: { xs: "flex", sm: "flex", md: "none" },
-                justifyContent: "center",
-                alignItems: "center",
-                backgroundColor:" #0E204E",
-                paddingY: "10rem",
-                height:'350px',
-                width:'900px',
-                lineHeight:'2rem'
+                fontSize: "30px",
+                paddingBottom: "2rem",
+                textAlign: "center",
+                color: "#FFF",
               }}
             >
-              <Typography variant="h1" sx={{ fontSize: "30px", paddingBottom: "2rem",textAlign:"center",color:'#FFF' }}>
-                Become an Agent
-              </Typography >
-              <Typography variant="body1" sx={{ fontSize: "16px", paddingBottom: "2rem", textAlign:"center",color:"#FFF",lineHeight:'2rem'}}>
-                A community that gives you a taste of
-                <br /> happiness, a place you’ll love to live and
-                <br /> an opportunity to build a home.
-              </Typography >
-              <Typography variant="body2"
-                sx={{
-                  paddingY: "1rem",
-                  paddingX: "1.75rem",
-                  backgroundColor: "#FFF",
-                  fontSize: "20px",
-                  color: "#0E204E",
-                  borderRadius:'0.5rem'
-                }}
-              >
-                Join Now
-              </Typography>
-            </Box>
-          </Grid>
+              Become an Agent
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                fontSize: "16px",
+                paddingBottom: "2rem",
+                textAlign: "center",
+                color: "#FFF",
+                lineHeight: "2rem",
+              }}
+            >
+              A community that gives you a taste of
+              <br /> happiness, a place you’ll love to live and
+              <br /> an opportunity to build a home.
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{
+                paddingY: "1rem",
+                paddingX: "1.75rem",
+                backgroundColor: "#FFF",
+                fontSize: "20px",
+                color: "#0E204E",
+                borderRadius: "0.5rem",
+              }}
+            >
+              Join Now
+            </Typography>
+          </Box>
+        </Grid>
         <Grid
           container
           size={{ md: 12 }}
@@ -66,23 +84,33 @@ export default function Become() {
                 alignItems: "start",
               }}
             >
-              <Typography variant="h1" sx={{ fontSize: "60px",color:'#0E204E' , paddingBottom: "2rem"}}>
+              <Typography
+                variant="h1"
+                sx={{
+                  fontSize: "60px",
+                  color: "#0E204E",
+                  paddingBottom: "2rem",
+                }}
+              >
                 Become an
                 <br /> Agent
-              </Typography >
-              <Typography variant="subtitle1" sx={{ fontSize: "19px", paddingBottom: "2rem" }}>
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{ fontSize: "19px", paddingBottom: "2rem" }}
+              >
                 a community that gives you a taste of
                 <br /> happiness, a place you’ll love to live and
                 <br /> an opportunity to build a home.
-              </Typography >
-              <Typography variant="body1"
+              </Typography>
+              <Typography
+                variant="body1"
                 sx={{
                   paddingY: "1rem",
                   paddingX: "4rem",
                   backgroundColor: "#0E204E",
                   fontSize: "20px",
                   color: "#FFF",
-
                 }}
               >
                 Join Now
@@ -109,7 +137,7 @@ export default function Become() {
             <Grid size={{ md: 9 }}>
               <Box
                 sx={{
-                   display: { xs: "none", sm: "none", md: "flex" },
+                  display: { xs: "none", sm: "none", md: "flex" },
                   justifyContent: "center",
                   clipPath:
                     "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
@@ -128,6 +156,5 @@ export default function Become() {
         </Grid>
       </Grid>
     </>
-    
   );
 }
