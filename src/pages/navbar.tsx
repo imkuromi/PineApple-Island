@@ -18,7 +18,7 @@ function Navbar() {
         sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem" } }}
       >
         <Grid size={3}>
-          <Box paddingTop="3.125rem" sx={{ color: "#0E204E"}}>
+          <Box paddingTop="3.125rem" sx={{ color: "#0E204E" }}>
             <Typography
               variant="h1"
               sx={{ fontSize: { xs: "1.25rem", sm: "1.625rem", md: "2rem" } }}
@@ -70,13 +70,18 @@ function Navbar() {
           size={3}
           justifyContent="end"
           sx={{
-            paddingTop: { xs: "3.125rem", sm: "3.125rem", md: "4.25rem", xl: "4.25rem" },
+            paddingTop: {
+              xs: "3.125rem",
+              sm: "3.125rem",
+              md: "4.25rem",
+              xl: "4.25rem",
+            },
           }}
         >
           <Button
             sx={{
               display: { xs: "none", sm: "none", md: "flex" },
-              fontSize: {md: "1.125rem", xl: "1.25rem"},
+              fontSize: { md: "1.125rem", xl: "1.25rem" },
               color: "#FFF",
               backgroundColor: "#0E204E",
               borderRadius: "0",
@@ -90,8 +95,8 @@ function Navbar() {
           <MenuIcon
             sx={{
               display: { sm: "flex", md: "none" },
-              padding:"0.9375rem",
-              fontSize: {xs:"2rem",sm:"2.5rem"},
+              padding: "0.9375rem",
+              fontSize: { xs: "2rem", sm: "2.5rem" },
               color: "#0E204E",
             }}
           />
