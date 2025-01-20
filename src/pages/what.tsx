@@ -281,7 +281,7 @@ export default function What() {
                 alt="1"
                 width={900}
                 height={634}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",width: "100%" }}
               />
             </Box>
           </Grid>
@@ -492,7 +492,7 @@ export default function What() {
                 alt="1"
                 width={900}
                 height={634}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",width: "100%" }}
               />
             </Box>
           </Grid>

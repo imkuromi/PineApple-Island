@@ -18,7 +18,7 @@ function Navbar() {
         sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem" } }}
       >
         <Grid size={3}>
-          <Box paddingTop="3.125rem" sx={{ color: "#0E204E" }}>
+          <Box paddingTop="3.125rem" sx={{ color: "#0E204E"}}>
             <Typography
               variant="h1"
               sx={{ fontSize: { xs: "1.25rem", sm: "1.625rem", md: "2rem" } }}

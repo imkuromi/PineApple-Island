@@ -15,7 +15,6 @@ import "@fontsource/manrope";
 import "@fontsource/lato";
 import "@fontsource/poppins";
 
-
 const theme = createTheme({
   breakpoints: {
     values: {
@@ -28,9 +27,9 @@ const theme = createTheme({
   },
   typography: {
     button: {
-      textTransform: 'none'
+      textTransform: "none",
     },
-    fontFamily: [ "Playfair Display","Manrope", "Lato", "Poppins"].join(","),
+    fontFamily: ["Playfair Display", "Manrope", "Lato", "Poppins"].join(","),
     h1: {
       fontFamily: "Playfair Display",
       fontWeight: 600,
@@ -51,7 +50,6 @@ const theme = createTheme({
       fontFamily: "Lato",
       fontWeight: 500,
     },
-   
   },
 });
 
@@ -61,9 +59,9 @@ export default function Home() {
       <Container
         maxWidth="xl"
         sx={{
-          backgroundColor:'#FFF',
-          '&.MuiContainer-root': {
-            paddingX: { xs: '20px',lg:'0' }
+          backgroundColor: "#FFF",
+          "&.MuiContainer-root": {
+            paddingX: { xs: "20px", md: "0px", lg: "0px" },
           },
         }}
       >
