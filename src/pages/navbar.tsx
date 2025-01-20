@@ -14,15 +14,14 @@ function Navbar() {
     >
       <Grid
         container
-        height="163px"
-        
-        sx={{marginX: {sm:"0rem",md:"2rem",xl:"6.25rem"}}}
+        height="10.1875rem"
+        sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem" } }}
       >
         <Grid size={3}>
-          <Box  paddingTop="50px" sx={{ color: "#0E204E" }}>
+          <Box paddingTop="3.125rem" sx={{ color: "#0E204E" }}>
             <Typography
               variant="h1"
-              sx={{ fontSize: { xs: "24px", sm: "26px", md: "32px" } }}
+              sx={{ fontSize: { xs: "1.25rem", sm: "1.625rem", md: "2rem" } }}
             >
               Pineapple
               <br />
@@ -30,17 +29,18 @@ function Navbar() {
             </Typography>
           </Box>
         </Grid>
-        <Grid container size={6} justifyContent="center"  paddingTop="81px">
+        <Grid container size={6} justifyContent="center" paddingTop="5.0625rem">
           <Box
             sx={{
-              display: {xs:"none",sm: "none", md: "block" },
+              display: { xs: "none", sm: "none", md: "block" },
               color: "#232323",
             }}
           >
             <Typography
               variant="subtitle1"
               component="a"
-              sx={{ padding: "2rem", fontSize: {md:"18px",xl:"20px"} }}
+              padding="2rem"
+              sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#about"
             >
               About Us
@@ -48,7 +48,8 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              sx={{ padding: "2rem", fontSize: {md:"18px",xl:"20px"} }}
+              padding="2rem"
+              sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#what"
             >
               What we do
@@ -56,38 +57,44 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              sx={{ padding: "2rem", fontSize: {md:"18px",xl:"20px"} }}
+              padding="2rem"
+              sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#galleries"
             >
               Project
             </Typography>
           </Box>
         </Grid>
-        <Grid container size={3} justifyContent="end" sx={{paddingTop: {xs:"none",sm:"none",md:"68px",xl:"68px"}}} >
-          <Button 
+        <Grid
+          container
+          size={3}
+          justifyContent="end"
+          sx={{
+            paddingTop: { xs: "3.125rem", sm: "3.125rem", md: "4.25rem", xl: "4.25rem" },
+          }}
+        >
+          <Button
             sx={{
-              display: { xs:"none",sm: "none", md: "flex" },
-              fontSize: {md:"18px",xl:"20px"},
+              display: { xs: "none", sm: "none", md: "flex" },
+              fontSize: {md: "1.125rem", xl: "1.25rem"},
               color: "#FFF",
               backgroundColor: "#0E204E",
               borderRadius: "0",
-              width: "188px",
-              height: "50px"
+              width: "11.75rem",
+              height: "3.125rem",
             }}
           >
             Get in Touch
           </Button>
 
-          <Box
+          <MenuIcon
             sx={{
               display: { sm: "flex", md: "none" },
-              
+              padding:"0.9375rem",
+              fontSize: {xs:"2rem",sm:"2.5rem"},
+              color: "#0E204E",
             }}
-          >
-            <IconButton sx={{ color: "#0E204E" }}>
-              <MenuIcon sx={{ fontSize: "2.5rem" }} />
-            </IconButton>
-          </Box>
+          />
         </Grid>
       </Grid>
     </AppBar>

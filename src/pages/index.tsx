@@ -69,14 +69,14 @@ export default function Home() {
       >
         <Navbar />
         <Intro />
-        {/* <About />
+        <About />
         <Why />
         <What />
         <Galleries />
         <Amazing />
         <Become />
         <Stay />
-        <Footer /> */}
+        <Footer />
       </Container>
     </ThemeProvider>
   );
