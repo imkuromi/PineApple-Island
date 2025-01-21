@@ -2,6 +2,17 @@ import { Box, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Stay() {
+  const textField = {
+    "& .MuiInputLabel-outlined": {
+      color: "#000",
+    },
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#000",
+    },
+    "& .MuiOutlinedInput-root": {
+      borderRadius: 0,
+    },
+  };
   return (
     <section id="stay">
       <Grid
@@ -127,6 +138,7 @@ export default function Stay() {
               label="Name"
               type="name"
               autoComplete="current-name"
+              sx={textField}
             />
           </Grid>
           <Grid size={{ sm: 12 }}>
@@ -136,6 +148,7 @@ export default function Stay() {
               label="Phone No"
               type="phone"
               autoComplete="current-phone"
+              sx={textField}
             />
           </Grid>
           <Grid size={{ sm: 12 }}>
@@ -145,10 +158,11 @@ export default function Stay() {
               label="Email"
               type="email"
               autoComplete="current-email"
+              sx={textField}
             />
           </Grid>
           <Grid size={{ sm: 12 }}>
-            <TextField fullWidth multiline label="Massage" rows={4} />
+            <TextField fullWidth multiline label="Massage" sx={textField} rows={4} />
           </Grid>
 
           <Typography
