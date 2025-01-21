@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Why() {
   return (
-    <Grid container maxWidth={"xl"}  sx={{ marginTop: {xs:'2rem',sm:'4rem',md:'10rem'}  }}>
+    <Grid container sx={{ marginTop: { xs:'2rem', sm:'4rem' ,md:'10rem' }}}>
       <Grid
         container
         size={{ xs: 12, sm: 12 }}
@@ -44,7 +44,7 @@ export default function Why() {
                     alt="1"
                     width={900}
                     height={400}
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover",width:"100%" }}
                   />
                 </Box>
               </Grid>
@@ -73,7 +73,7 @@ export default function Why() {
                   color: "#FFFFFF",
                 }}
               >
-                <Typography variant="h1" sx={{fontSize:'50px'}}>
+                <Typography variant="h1" fontSize="50px">
                   Why <br /> Choose <br />
                   Pineapple <br />
                   Island
@@ -81,8 +81,8 @@ export default function Why() {
               </Box>
             </Grid>
 
-            <Grid container size={{ md: 9 }}>
-              <Grid size={{ md: 5 }}>
+            <Grid container justifyContent="start" size={{ md: 9 }} >
+              <Grid container justifyContent="start" size={{ md: 4 }}>
                 <Box
                   sx={{
                     display: {
@@ -93,11 +93,11 @@ export default function Why() {
                     height: "39.625rem",
                     width: "100%",
                     backgroundColor: " #FFFFFF",
-                    paddingX: {md:"3rem",lg:'3.5rem'},
+                    paddingX: {md:"2rem",lg:'3.5rem'},
                     alignItems: "center",
                   }}
                 >
-                  <Typography variant="subtitle1" sx={{fontSize:'19px'}}>
+                  <Typography variant="subtitle1" sx={{fontSize:{sm:'10px', md:'18px'}}}>
                     Pineapple Island is the most sought-after community in
                     Ibadan that values and puts the needs of their clients
                     first. It is a territory with loft complexes that creates a
@@ -107,7 +107,7 @@ export default function Why() {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid size={{ md: 6 }}>
+              <Grid size={{ md: 5 }}>
                 <Box
                   sx={{
                       display: {
@@ -125,7 +125,7 @@ export default function Why() {
                     alt="1"
                     width={900}
                     height={634}
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover",width: "100%" }}
                   />
                 </Box>
               </Grid>

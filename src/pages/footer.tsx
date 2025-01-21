@@ -9,7 +9,7 @@ export default function Footer() {
           display: { xs: "none", sm: "none", md: "block" },
           backgroundColor: "#0E204E",
           height: "27rem",
-          width: "100%",
+          
           clipPath: {
             md: "polygon(10% 10%, 100% 40%, 100% 100%, 0 100%, 0 30%)",
           },
@@ -88,7 +88,6 @@ export default function Footer() {
           marginTop: "5rem",
           alignItems: "center",
           flexDirection: "column",
-
           clipPath: {
             md: "polygon(100% 100%, 100% 100%, 100% 100%, 0 100%, 0 100%)",
           },

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Intro() {
   return (
     <>
-      <Grid container maxWidth={"xl"}>
+      <Grid container >
         <Grid size={{ md: 3 }}>
           <Box sx={{ position: "relative" }}>
             <Box
@@ -13,8 +13,8 @@ export default function Intro() {
                 display: { xs: "none", sm: "none", md: "block" },
                 position: "absolute",
                 top: { md: 175, lg: 180 },
-                width: { md: "37rem", lg: "39rem" },
-                height: { md: "24rem", lg: "24rem" },
+                width: { md: "37rem", xl: "49rem" },
+                height: { md: "24rem", xl: "31rem" },
                 backgroundColor: " #0E204E",
                 zIndex: 1,
                 padding: "3.5rem",
@@ -43,8 +43,8 @@ export default function Intro() {
               src="/1.jpg"
               alt="intro"
               width={1368}
-              height={717}
-              style={{ objectFit: "cover" }}
+              height={700}
+              style={{ objectFit: "cover",width: "100%",height: "auto"}}
             />
             <Box
               sx={{
@@ -61,7 +61,7 @@ export default function Intro() {
               }}
             >
               <Typography
-              variant="h1"
+                variant="h1"
                 sx={{
                   color: "#FFF",
                   fontSize:{xs:"26px",sm:"30px"},

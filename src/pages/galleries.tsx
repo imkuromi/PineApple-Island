@@ -12,7 +12,7 @@ export default function Galleries() {
   return (
     <section id='galleries'>
  
-      <Grid container maxWidth={"xl"} sx={{ marginTop:{xs:'8rem',sm:'8rem',md:'10rem'} }}>
+      <Grid container  sx={{ marginTop:{xs:'8rem',sm:'8rem',md:'10rem'} }}>
         <Grid
           container
           size={{ xs: 12, sm: 12 }}
@@ -70,7 +70,7 @@ export default function Galleries() {
                 alt="1"
                 width={450}
                 height={200}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",width:'100%' }}
               />
             </Box>
           </Grid>
@@ -87,7 +87,7 @@ export default function Galleries() {
                 alt="1"
                 width={450}
                 height={200}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover" ,width:'100%'}}
               />
             </Box>
           </Grid>
@@ -105,7 +105,7 @@ export default function Galleries() {
                 alt="1"
                 width={450}
                 height={200}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",width:'100%' }}
               />
             </Box>
           </Grid>
@@ -124,7 +124,7 @@ export default function Galleries() {
                   alt="1"
                   width={450}
                   height={200}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover" ,width:'100%'}}
                 />
               </Box>
             </Grid>
@@ -143,7 +143,7 @@ export default function Galleries() {
                   alt="1"
                   width={450}
                   height={200}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -162,7 +162,7 @@ export default function Galleries() {
                   alt="1"
                   width={450}
                   height={416}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover" ,width:'100%'}}
                 />
               </Box>
             </Grid>
@@ -181,7 +181,7 @@ export default function Galleries() {
                   alt="1"
                   width={450}
                   height={416}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -200,7 +200,7 @@ export default function Galleries() {
                   alt="1"
                   width={450}
                   height={200}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -219,7 +219,7 @@ export default function Galleries() {
                   alt="1"
                   width={450}
                   height={200}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -237,7 +237,7 @@ export default function Galleries() {
                 alt="1"
                 width={450}
                 height={200}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover" ,width:'100%'}}
               />
             </Box>
           </Grid>
@@ -255,7 +255,7 @@ export default function Galleries() {
                 alt="1"
                 width={450}
                 height={200}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",width:'100%' }}
               />
             </Box>
           </Grid>
@@ -274,7 +274,7 @@ export default function Galleries() {
                 alt="1"
                 width={900}
                 height={200}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover",width:'100%' }}
               />
             </Box>
           </Grid>
@@ -326,7 +326,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -344,7 +344,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -362,7 +362,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover" ,width:'100%'}}
                 />
               </Box>
             </Grid>
@@ -380,7 +380,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -398,7 +398,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -416,7 +416,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -434,7 +434,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -452,7 +452,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
@@ -470,7 +470,7 @@ export default function Galleries() {
                   alt="1"
                   width={553}
                   height={469}
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "cover",width:'100%' }}
                 />
               </Box>
             </Grid>
