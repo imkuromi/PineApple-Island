@@ -96,7 +96,7 @@ export default function Why() {
             </Grid>
 
             <Grid container justifyContent="start" size={{ md: 9 }}>
-              <Grid container justifyContent="start" size={{ md: 5 ,xl:4}} >
+              <Grid container justifyContent="start" size={{ md: 5, xl: 4 }}>
                 <Box
                   sx={{
                     display: {
@@ -104,16 +104,19 @@ export default function Why() {
                       sm: "none",
                       md: "flex",
                     },
-                    alignItems:"center",
+                    alignItems: "center",
                     height: "39.625rem",
                     width: "100%",
                     backgroundColor: " #FFFFFF",
-
                   }}
                 >
                   <Typography
                     variant="subtitle1"
-                    sx={{ fontSize: { sm: "10px", md: "18px" },color:"#0E204E" ,marginX:{md:"4rem",xl:"6.25rem"}}}
+                    sx={{
+                      fontSize: { sm: "10px", md: "18px" },
+                      color: "#0E204E",
+                      marginX: { md: "4rem", xl: "6.25rem" },
+                    }}
                   >
                     Pineapple Island is the most sought-after community in
                     Ibadan that values and puts the needs of their clients
@@ -124,7 +127,7 @@ export default function Why() {
                   </Typography>
                 </Box>
               </Grid>
-              <Grid size={{ md: 6,xl:7 }}>
+              <Grid size={{ md: 6, xl: 7 }}>
                 <Box
                   sx={{
                     display: {
