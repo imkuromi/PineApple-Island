@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Become() {
@@ -103,18 +103,18 @@ export default function Become() {
                 <br /> happiness, a place you’ll love to live and
                 <br /> an opportunity to build a home.
               </Typography>
-              <Typography
-                variant="body1"
+              <Button
                 sx={{
-                  paddingY: "1rem",
-                  paddingX: "4rem",
+                  fontWeight:'300',
+                  paddingY: "0.8445rem",
+                  paddingX: "4.903rem",
                   backgroundColor: "#0E204E",
                   fontSize: "20px",
                   color: "#FFF",
                 }}
               >
                 Join Now
-              </Typography>
+              </Button>
             </Box>
           </Grid>
           <Grid
