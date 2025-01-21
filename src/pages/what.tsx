@@ -61,7 +61,7 @@ export default function What() {
                   top: "-10rem",
                   left: "9%",
                   width: "80%",
-                  height: "400px",
+                  height: "300px",
                   backgroundColor: "#0E204E",
                 }}
               >
@@ -79,25 +79,30 @@ export default function What() {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        width: "46",
-                        height: "52",
                         flexDirection: "column",
                       }}
                     >
-                      <Image
-                        src="/eco-w.svg"
-                        alt="1"
-                        width={46}
-                        height={52}
-                        style={{ objectFit: "cover" }}
-                      />
+                      <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        width="32px"
+                        height="32px"
+                      >
+                        <img
+                          src="/eco-w.svg"
+                          alt="1"
+                          style={{ width: "23px" }}
+                        />
+                      </Box>
+
                       <Typography
                         variant="subtitle2"
                         sx={{
                           textAlign: "center",
                           paddingTop: "1.5rem",
                           color: "#FFF",
-                          fontSize: "16px",
+                          fontSize: "12px",
                         }}
                       >
                         Eco Friendly
@@ -115,20 +120,26 @@ export default function What() {
                         flexDirection: "column",
                       }}
                     >
-                      <Image
-                        src="/smart-w.svg"
-                        alt="1"
-                        width={46}
-                        height={50}
-                        style={{ objectFit: "cover" }}
-                      />
+                      <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        width="32px"
+                        height="32px"
+                      >
+                        <img
+                          src="/smart-w.svg"
+                          alt="1"
+                          style={{ width: "32px" }}
+                        />
+                      </Box>
                       <Typography
                         variant="subtitle2"
                         sx={{
                           textAlign: "center",
                           paddingTop: "1.5rem",
                           color: "white",
-                          fontSize: "16px",
+                          fontSize: "12px",
                         }}
                       >
                         Smart Homes
@@ -146,20 +157,26 @@ export default function What() {
                         flexDirection: "column",
                       }}
                     >
-                      <Image
-                        src="/good-w.svg"
-                        alt="1"
-                        width={46}
-                        height={50}
-                        style={{ objectFit: "cover" }}
-                      />
+                      <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        width="32px"
+                        height="32px"
+                      >
+                        <img
+                          src="/good-w.svg"
+                          alt="1"
+                          style={{ width: "32px" }}
+                        />
+                      </Box>
                       <Typography
                         variant="subtitle2"
                         sx={{
                           textAlign: "center",
                           paddingTop: "1.5rem",
                           color: "#FFF",
-                          fontSize: "16px",
+                          fontSize: "12px",
                         }}
                       >
                         Good Rates
@@ -184,20 +201,27 @@ export default function What() {
                           flexDirection: "column",
                         }}
                       >
-                        <Image
-                          src="/serviced-w.svg"
-                          alt="1"
-                          width={52}
-                          height={66}
-                          style={{ objectFit: "cover" }}
-                        />
+                        <Box
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                          width="32px"
+                          height="32px"
+                        >
+                          <img
+                            src="/serviced-w.svg"
+                            alt="1"
+                            style={{ width: "32px" }}
+                          />
+                        </Box>
+
                         <Typography
                           variant="subtitle2"
                           sx={{
                             textAlign: "center",
                             paddingTop: "1.5rem",
                             color: "#FFF",
-                            fontSize: "16px",
+                            fontSize: "12px",
                           }}
                         >
                           Serviced Apartment
@@ -215,20 +239,26 @@ export default function What() {
                           flexDirection: "column",
                         }}
                       >
-                        <Image
-                          src="/private-w.svg"
-                          alt="1"
-                          width={50}
-                          height={66}
-                          style={{ objectFit: "cover" }}
-                        />
+                        <Box
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                          width="32px"
+                          height="32px"
+                        >
+                          <img
+                            src="/private-w.svg"
+                            alt="1"
+                            style={{ width: "32px" }}
+                          />
+                        </Box>
                         <Typography
                           variant="subtitle2"
                           sx={{
                             textAlign: "center",
                             paddingTop: "1.5rem",
                             color: "#FFF",
-                            fontSize: "16px",
+                            fontSize: "12px",
                           }}
                         >
                           Private Security
@@ -246,20 +276,27 @@ export default function What() {
                           flexDirection: "column",
                         }}
                       >
-                        <Image
-                          src="/24-w.svg"
-                          alt="1"
-                          width={45}
-                          height={68}
-                          style={{ objectFit: "cover" }}
-                        />
+                        <Box
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                          width="32px"
+                          height="32px"
+                        >
+                          <img
+                            src="/24-w.svg"
+                            alt="1"
+                            style={{ width: '32px',height:'32px' }}
+                          />
+                        </Box>
+
                         <Typography
                           variant="subtitle2"
                           sx={{
                             textAlign: "center",
                             paddingTop: "1.5rem",
                             color: "#FFF",
-                            fontSize: "16px",
+                            fontSize: "12px",
                           }}
                         >
                           24/7 Electricity
