@@ -98,7 +98,7 @@ export default function Amazing() {
           </Grid>
           <Grid container size={{ md: 6 }} justifyContent={"end"}>
             <Grid container size={{ md: 11,lg:10 }} justifyContent={"center"} >
-              <Typography noWrap variant="h1" sx={{fontSize:{ md: '45.5px',lg:'50px'} ,color:'#0E204E',paddingY:'2.5rem',marginLeft:{md:'2rem',lg:'5rem'}}}  >
+              <Typography noWrap variant="h2" sx={{fontSize:{ md: '45.5px',xl:'60px'} ,color:'#0E204E',paddingY:'2.5rem',marginLeft:{md:'2rem',lg:'5rem'}}}  >
                 Amazing Future
               </Typography>
             </Grid>

@@ -252,7 +252,7 @@ export default function What() {
               fontSize: "60px",
             }}
           >
-            <Typography variant="h1" sx={{ fontSize: "60px",color:'#0E204E' }}>
+            <Typography variant="h2" sx={{ fontSize: "60px",color:'#0E204E' }}>
               What Pineapple Land Offers
             </Typography>
           </Box>
