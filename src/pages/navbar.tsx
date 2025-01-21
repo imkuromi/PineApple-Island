@@ -17,7 +17,7 @@ function Navbar() {
         height="10.1875rem"
         sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem" } }}
       >
-        <Grid size={3} container justifyContent="start" alignItems="center">
+        <Grid size={3} container justifyContent="start" alignItems=" start">
           <Box paddingTop="3.125rem" sx={{ color: "#0E204E" }}>
             <Typography
               variant="h1"
@@ -69,7 +69,7 @@ function Navbar() {
           container
           size={3}
           justifyContent="end"
-          alignItems="center"
+          alignItems="start"
           sx={{
             paddingTop: {
               xs: "3.125rem",
