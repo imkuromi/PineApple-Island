@@ -316,7 +316,7 @@ export default function What() {
                 />
                  <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "2.5rem",fontSize:"18px" }}
+                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
                 >
                   Eco Friendly
                 </Typography>
@@ -342,7 +342,7 @@ export default function What() {
                 />
                   <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "2.5rem",fontSize:"18px" }}
+                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
                 >
                   Smart Homes
                 </Typography>
@@ -368,7 +368,7 @@ export default function What() {
                 />
                  <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "2.5rem",fontSize:"18px" }}
+                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
                 >
                   Good Rates
                 </Typography>
@@ -407,7 +407,7 @@ export default function What() {
                 />
                  <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "2.5rem",fontSize:"18px" }}
+                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
                 >
                   Serviced Apartment
                 </Typography>
@@ -433,7 +433,7 @@ export default function What() {
                 />
                 <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "2.5rem",fontSize:"18px" }}
+                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
                 >
                   Private Security
                 </Typography>
@@ -459,7 +459,7 @@ export default function What() {
                 />
                   <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "2.5rem",fontSize:"18px" }}
+                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
                 >
                   24/7 Electricity
                 </Typography>
