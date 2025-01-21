@@ -1,4 +1,11 @@
-import { Box, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  IconButton,
+  InputBase,
+  Paper,
+  TextField,
+  Typography,
+} from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Footer() {
@@ -65,24 +72,32 @@ export default function Footer() {
                 width: "100%",
               }}
             >
-              <TextField
-                fullWidth
-                multiline
-                label="Email"
-                sx={{ fontSize: "18px", backgroundColor: "#FFF" }}
-              />
-              <Typography
-                variant="subtitle1"
+              <Paper
+                component="form"
+                
                 sx={{
-                  fontSize: "18px",
-                  color: "#000",
-                  backgroundColor: "#FFF",
-                  paddingTop: "0.50rem",
-                  paddingX: "0.5rem",
+                  borderRadius:0,
+                  p: "2px 4px",
+                  display: "flex",
+                  alignItems: "center",
+                  width: '100%',
                 }}
               >
-                Subscribe
-              </Typography>
+                <InputBase
+                  sx={{ ml: 1, flex: 1,fontSize:"20px",fontFamily:'Manrope',color:"#0E204E" }}
+                  
+                  placeholder="Email"
+                />
+
+                <IconButton
+                  
+                  sx={{ fontSize:"20px",fontFamily:'Manrope',color:"#0E204E"}}
+                  aria-label="directions"
+                >
+                  Subsacribe
+                </IconButton>
+              </Paper>
+             
             </Box>
           </Grid>
         </Grid>
