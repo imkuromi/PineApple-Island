@@ -34,6 +34,10 @@ const theme = createTheme({
       fontFamily: "Playfair Display",
       fontWeight: 600,
     },
+    h2: {
+      fontFamily: "Playfair Display",
+      fontWeight: 600,
+    },
     subtitle1: {
       fontFamily: "Manrope",
       fontWeight: 300,

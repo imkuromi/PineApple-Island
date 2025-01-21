@@ -1,6 +1,19 @@
 import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
+import Carousel from "react-material-ui-carousel";
+
+const items = [
+  {
+    name: "Image 1",
+    imgPath: "/2.jpg",
+  },
+  {
+    name: "Image 2",
+    imgPath: "/3.jpg",
+  },
+];
+
 export default function About() {
   return (
     <section id="about">
@@ -36,10 +49,10 @@ export default function About() {
           size={{ md: 3 }}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{
               display: { xs: "none", sm: "none", md: "block" },
-              fontSize: "50px",
+              fontSize: { md: "50px", xl: "60px" },
               color: "#0E204E",
             }}
           >
@@ -52,23 +65,47 @@ export default function About() {
         </Grid>
 
         <Grid container size={{ md: 9 }}>
-          <Grid size={{ md: 6 }}>
+          <Grid size={{ md: 6, xl: 7 }}>
             <Box
               sx={{
-                display: "flex",
+                display: { xs: "none", sm: "none", md: "flex" },
                 justifyContent: "center",
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
                 height: { xs: "90%", sm: "95%", md: "100%" },
+                width: "100%",
+              }}
+            >
+              <Carousel sx={{ width: "100%" }}>
+                {items.map((item, index) => (
+                  <Image
+                    key={index}
+                    src={item.imgPath}
+                    alt={item.name}
+                    width={900}
+                    height={618}
+                    style={{ objectFit: "cover" }}
+                  />
+                ))}
+              </Carousel>
+            </Box>
+            <Box
+              sx={{
+                display: { xs: "flex", sm: "flex", md: "none" },
+                justifyContent: "center",
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
+                height: { xs: "90%", sm: "95%", md: "100%" },
+                width: "100%",
                 position: "relative",
               }}
             >
               <Image
                 src="/2.jpg"
-                alt="intro"
+                alt="2"
                 width={900}
                 height={618}
-                style={{ objectFit: "cover", width: "100%" }}
+                style={{ objectFit: "cover",width:"100%" }}
               />
+
               <Box
                 sx={{
                   position: "absolute",
@@ -104,7 +141,7 @@ export default function About() {
               </Box>
             </Box>
           </Grid>
-          <Grid size={{ md: 4 }}>
+          <Grid size={{ md: 4, xl: 3 }}>
             <Box
               sx={{
                 display: { xs: "none", sm: "none", md: "flex" },
