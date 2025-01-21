@@ -1,4 +1,4 @@
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, Button, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Stay() {
@@ -151,22 +151,23 @@ export default function Stay() {
             <TextField fullWidth multiline label="Massage" rows={4} />
           </Grid>
 
-          <Typography
-            variant="body1"
+          <Button
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               marginX: "25rem",
-              paddingY: "0.5rem",
-              paddingX: "2rem",
+              width:'143px',
+              height:'48px',
+              textAlign:'center',
               backgroundColor: "#0E204E",
-              fontSize: "16px",
+              fontSize: "18px",
               color: "white",
+              borderRadius:0
             }}
           >
             Send
-          </Typography>
+          </Button>
         </Grid>
       </Grid>
     </section>
