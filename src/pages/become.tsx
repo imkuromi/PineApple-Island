@@ -111,6 +111,7 @@ export default function Become() {
                   backgroundColor: "#0E204E",
                   fontSize: "20px",
                   color: "#FFF",
+                  borderRadius:0
                 }}
               >
                 Join Now
