@@ -1,4 +1,4 @@
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, Button, InputLabel, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Stay() {
@@ -13,13 +13,15 @@ export default function Stay() {
       borderRadius: 0,
     },
   };
+
+  const massage = {
+    "& .MuiInputBase-root-MuiOutlinedInput-root": {
+      borderRadius: 0,
+    },
+  };
   return (
     <section id="stay">
-      <Grid
-        container
-        maxWidth={"xl"}
-        sx={{ marginY: { xs: "5rem", sm: "5rem", md: "10rem" } }}
-      >
+      <Grid container sx={{ marginY: { xs: "2rem", sm: "5rem", md: "10rem" } }}>
         <Grid
           container
           justifyContent={"center"}
@@ -39,16 +41,17 @@ export default function Stay() {
           >
             Stay In Touch
           </Typography>
-          <Box
-            sx={{
+         
+            <Typography variant="body1" sx={{
               marginBottom: "1.5rem",
-              fontSize: "20px",
+              fontSize: "16px",
               textAlign: "center",
-            }}
-          >
+              color:'#000000BD'
+            }}>
             If you are interested in finding out more about
             <br /> The Discovery Village, leave a message
-          </Box>
+            </Typography>
+          
           <Grid
             container
             size={{ xs: 12, sm: 12 }}
@@ -83,24 +86,27 @@ export default function Stay() {
               />
             </Grid>
             <Grid size={{ xs: 8, sm: 8 }}>
-              <TextField
-                fullWidth
-                multiline
-                label="Massage"
-                rows={4}
-                variant="standard"
-              />
+              <InputLabel
+                sx={{
+                  display: "flex",
+                  justifyContent: "start",
+                  marginTop: "0.75rem",
+                  marginBottom: "0.45rem",
+                }}
+              >
+                Massage
+              </InputLabel>
+              <TextField fullWidth multiline rows={4} sx={{ massage }} />
             </Grid>
 
-            <Typography
-              variant="body1"
+            <Button
               sx={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 marginX: "25rem",
-                paddingY: "0.75rem",
-                paddingX: "2rem",
+                width:'82px',
+                height:'40px',
                 backgroundColor: "#0E204E",
                 fontSize: "16px",
                 color: "white",
@@ -108,7 +114,7 @@ export default function Stay() {
               }}
             >
               Send
-            </Typography>
+            </Button>
           </Grid>
         </Grid>
         <Grid
@@ -121,13 +127,13 @@ export default function Stay() {
           size={{ md: 12 }}
           sx={{ display: { xs: "none", sm: "none", md: "grid" } }}
         >
-          <Typography variant="h2"sx={{ fontSize: "60px", color: "#0E204E" }}>
+          <Typography variant="h2" sx={{ fontSize: "60px", color: "#0E204E" }}>
             Stay In Touch
           </Typography>
           <Typography
             variant="body1"
             sx={{ marginBottom: "1rem", fontSize: "19px" }}
->
+          >
             Are you curious about Pineapple Island? Send a message
           </Typography>
 
@@ -177,13 +183,13 @@ export default function Stay() {
               justifyContent: "center",
               alignItems: "center",
               marginX: "25rem",
-              width:'143px',
-              height:'48px',
-              textAlign:'center',
+              width: "143px",
+              height: "48px",
+              textAlign: "center",
               backgroundColor: "#0E204E",
               fontSize: "18px",
               color: "white",
-              borderRadius:0
+              borderRadius: 0,
             }}
           >
             Send
