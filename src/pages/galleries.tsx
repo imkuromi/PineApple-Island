@@ -295,7 +295,7 @@ export default function Galleries() {
             sx={{display:'flex',flexDirection:'column'}}
           >
           <Typography
-              variant="h1"
+              variant="h2"
               sx={{ textAlign: "center", marginBottom: "1rem", fontSize: "60px",color:'#0E204E' }}
             >
               Galleries

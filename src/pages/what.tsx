@@ -283,7 +283,7 @@ export default function What() {
             }}
           >
             <Typography
-              variant="h1"
+              variant="h2"
               sx={{ fontSize: "60px", color: "#0E204E" }}
             >
               What Pineapple Land Offers
