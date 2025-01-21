@@ -121,13 +121,13 @@ export default function Stay() {
           size={{ md: 12 }}
           sx={{ display: { xs: "none", sm: "none", md: "grid" } }}
         >
-          <Typography variant="h1" sx={{ fontSize: "60px", color: "#0E204E" }}>
+          <Typography variant="h2"sx={{ fontSize: "60px", color: "#0E204E" }}>
             Stay In Touch
           </Typography>
           <Typography
             variant="body1"
             sx={{ marginBottom: "1rem", fontSize: "19px" }}
-          >
+>
             Are you curious about Pineapple Island? Send a message
           </Typography>
 
