@@ -88,6 +88,7 @@ function Navbar() {
               width: "11.75rem",
               height: "3.125rem",
             }}
+            href="#stay"
           >
             Get in Touch
           </Button>

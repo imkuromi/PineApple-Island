@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Stay() {
   return (
-    <><Grid
+    <section id="stay"><Grid
     container
     maxWidth={"xl"}
     sx={{ marginY: {xs:"5rem",sm:"5rem",md:"10rem"}}}>
@@ -158,6 +158,6 @@ export default function Stay() {
  
       </Grid>
       
-    </>
+    </section>
   );
 }
