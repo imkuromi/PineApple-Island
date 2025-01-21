@@ -30,7 +30,7 @@ export default function Become() {
             }}
           >
             <Typography
-              variant="h1"
+              variant="h2"
               sx={{
                 fontSize: "30px",
                 paddingBottom: "2rem",

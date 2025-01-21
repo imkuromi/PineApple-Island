@@ -13,7 +13,7 @@ export default function Why() {
           alignItems: "center",
         }}
       >
-        <Typography variant="h1" sx={{ color: "#0E204E",fontSize:'30px',textAlign: "center",
+        <Typography variant="h2" sx={{ color: "#0E204E",fontSize:'30px',textAlign: "center",
                     marginBottom: "1.5rem", }}>
           Why Choose Pineapple Island
         </Typography>
@@ -73,7 +73,7 @@ export default function Why() {
                   color: "#FFFFFF",
                 }}
               >
-                <Typography variant="h1" fontSize="50px">
+                <Typography variant="h2" sx={{fontSize:{md:'50px',xl:'60px'}}} >
                   Why <br /> Choose <br />
                   Pineapple <br />
                   Island

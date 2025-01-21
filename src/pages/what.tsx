@@ -16,7 +16,7 @@ export default function What() {
           }}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{
               color: "#0E204E",
               fontSize:'30px',
