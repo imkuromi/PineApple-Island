@@ -29,7 +29,7 @@ export default function Galleries() {
             sx={{ justifyContent: "center",marginBottom: "1rem" ,width:'100%'}}
           >
             <Typography
-              variant="h1"
+              variant="h2"
               sx={{ textAlign: "center", marginBottom: "1rem", fontSize: "30px",color:'#0E204E' }}
             >
               Available Homes

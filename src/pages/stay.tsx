@@ -29,7 +29,7 @@ export default function Stay() {
           sx={{ display: { xs: "grid", sm: "grid", md: "none" } }}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{
               marginBottom: "1.5rem",
               fontSize: "30px",
@@ -162,7 +162,13 @@ export default function Stay() {
             />
           </Grid>
           <Grid size={{ sm: 12 }}>
-            <TextField fullWidth multiline label="Massage" sx={textField} rows={4} />
+            <TextField
+              fullWidth
+              multiline
+              label="Massage"
+              sx={textField}
+              rows={4}
+            />
           </Grid>
 
           <Button

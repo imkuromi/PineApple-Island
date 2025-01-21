@@ -14,7 +14,7 @@ export default function Why() {
         }}
       >
         <Typography
-          variant="h1"
+          variant="h2"
           sx={{
             color: "#0E204E",
             fontSize: "30px",
@@ -87,7 +87,10 @@ export default function Why() {
                   color: "#FFFFFF",
                 }}
               >
-                <Typography variant="h2" fontSize="50px">
+                <Typography
+                  variant="h2"
+                  sx={{ fontSize: { md: "50px", xl: "60px" } }}
+                >
                   Why <br /> Choose <br />
                   Pineapple <br />
                   Island
