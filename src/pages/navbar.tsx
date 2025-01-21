@@ -69,7 +69,7 @@ function Navbar() {
           container
           size={3}
           justifyContent="end"
-         alignItems="center"
+          alignItems="center"
           sx={{
             paddingTop: {
               xs: "3.125rem",

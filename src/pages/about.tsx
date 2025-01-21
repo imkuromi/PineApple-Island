@@ -103,7 +103,7 @@ export default function About() {
                 alt="2"
                 width={900}
                 height={550}
-                style={{ objectFit: "cover",width:"100%" }}
+                style={{ objectFit: "cover", width: "100%" }}
               />
 
               <Box
@@ -115,7 +115,7 @@ export default function About() {
                   alignItems: "center",
                   top: 0,
                   left: 0,
-                  height:'100%',
+                  height: "100%",
                   backgroundColor: "rgba(0, 0, 0, 0.5)",
                   paddingY: "1rem",
                   paddingX: { xs: "2rem", sm: "5rem" },
@@ -129,7 +129,7 @@ export default function About() {
                     fontSize: "16px",
                     textAlign: "center",
                     marginBottom: "2rem",
-                    paddingX:'1.5rem'
+                    paddingX: "1.5rem",
                   }}
                 >
                   Pineapple Island is the most sought-after community in Ibadan

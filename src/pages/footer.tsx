@@ -9,7 +9,7 @@ export default function Footer() {
           display: { xs: "none", sm: "none", md: "block" },
           backgroundColor: "#0E204E",
           height: "27rem",
-          
+
           clipPath: {
             md: "polygon(10% 10%, 100% 40%, 100% 100%, 0 100%, 0 30%)",
           },
@@ -19,11 +19,17 @@ export default function Footer() {
         <Grid
           container
           size={{ md: 12 }}
-         
           columnSpacing={"10rem"}
-          direction={'row'}
+          direction={"row"}
         >
-          <Grid container size={{ md: 6 }} sx={{flexDirection:'column',paddingLeft:{md:'10rem',lg:'20rem'}}}>
+          <Grid
+            container
+            size={{ md: 6 }}
+            sx={{
+              flexDirection: "column",
+              paddingLeft: { md: "10rem", lg: "20rem" },
+            }}
+          >
             <Typography
               variant="subtitle1"
               sx={{ fontSize: "30px", paddingTop: "7rem" }}
@@ -32,10 +38,8 @@ export default function Footer() {
               <br /> Island
             </Typography>
             <Typography variant="subtitle1" sx={{ fontSize: "19px" }}>
-              a community that gives you a taste 
-              of happiness, a place you’ll love to 
-              live and an opportunity to build a 
-              home.
+              a community that gives you a taste of happiness, a place you’ll
+              love to live and an opportunity to build a home.
             </Typography>
           </Grid>
           <Grid size={{ md: 4 }}>
@@ -49,16 +53,23 @@ export default function Footer() {
               variant="subtitle1"
               sx={{ fontSize: "19px", marginBottom: "0.5rem" }}
             >
-              Keep up with our newsletter to get 
-              updates aboutprojects and offers
+              Keep up with our newsletter to get updates aboutprojects and
+              offers
             </Typography>
-            <Box sx={{ display: "flex", flexDirection: "row",gap:'0.1rem',height:'3rem',width:'100%' }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "0.1rem",
+                height: "3rem",
+                width: "100%",
+              }}
+            >
               <TextField
-              fullWidth
-              multiline
+                fullWidth
+                multiline
                 label="Email"
-                
-                sx={{ fontSize:'18px',backgroundColor: "#FFF" }}
+                sx={{ fontSize: "18px", backgroundColor: "#FFF" }}
               />
               <Typography
                 variant="subtitle1"
@@ -66,14 +77,13 @@ export default function Footer() {
                   fontSize: "18px",
                   color: "#000",
                   backgroundColor: "#FFF",
-                paddingTop:'0.50rem',
-                paddingX:'0.5rem'
+                  paddingTop: "0.50rem",
+                  paddingX: "0.5rem",
                 }}
               >
                 Subscribe
               </Typography>
             </Box>
-            
           </Grid>
         </Grid>
       </Box>
