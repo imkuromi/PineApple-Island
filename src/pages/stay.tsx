@@ -20,7 +20,7 @@ export default function Stay() {
   };
   return (
     <section id="stay">
-      <Grid container sx={{ marginY: { xs: "2rem", sm: "5rem", md: "10rem" } }}>
+      <Grid container sx={{ marginY: { xs: "2rem", sm: "3.5rem", md: "10rem" } }}>
         <Grid
           container
           justifyContent={"center"}
