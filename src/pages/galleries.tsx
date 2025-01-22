@@ -1,10 +1,4 @@
-import {
-  Box,
-  Container,
-  ImageList,
-  ImageListItem,
-  Typography,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 
@@ -13,7 +7,10 @@ export default function Galleries() {
     <section id="galleries">
       <Grid
         container
-        sx={{ marginTop: { xs: "5rem", sm: "8rem", md: "10rem" } }}
+        sx={{
+          marginTop: { xs: "5rem", sm: "8rem", md: "10rem" },
+          paddingBottom: "2rem",
+        }}
       >
         <Grid
           container
@@ -153,8 +150,6 @@ export default function Galleries() {
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  clipPath:
-                    "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
                 }}
               >
                 <Image
@@ -172,7 +167,6 @@ export default function Galleries() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
               }}
             >
               <Image
@@ -190,7 +184,6 @@ export default function Galleries() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
               }}
             >
               <Image
@@ -213,8 +206,6 @@ export default function Galleries() {
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  clipPath:
-                    "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
                 }}
               >
                 <Image
@@ -232,8 +223,6 @@ export default function Galleries() {
                 sx={{
                   display: "flex",
                   justifyContent: "center",
-                  clipPath:
-                    "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
                 }}
               >
                 <Image
@@ -251,7 +240,6 @@ export default function Galleries() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
               }}
             >
               <Image
@@ -269,7 +257,6 @@ export default function Galleries() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
               }}
             >
               <Image
@@ -287,7 +274,6 @@ export default function Galleries() {
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
               }}
             >
               <Image
@@ -295,7 +281,7 @@ export default function Galleries() {
                 alt="1"
                 width={900}
                 height={200}
-                style={{ objectFit: "cover", width: "100%" }}
+                style={{ objectFit: "cover", height: "200px", width: "100%" }}
               />
             </Box>
           </Grid>

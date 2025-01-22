@@ -7,8 +7,10 @@ export default function What() {
     <section id="what">
       <Grid
         container
-        maxWidth={"xl"}
-        sx={{ marginTop: { xs: "5rem", sm: "5rem", md: "10rem" } }}
+        sx={{
+          marginTop: { xs: "5rem", sm: "5rem", md: "10rem" },
+          marginX: { md: "5rem", xl: "6rem" },
+        }}
       >
         <Grid
           container
@@ -286,7 +288,7 @@ export default function What() {
                           <img
                             src="/24-w.svg"
                             alt="1"
-                            style={{ width: '32px',height:'32px' }}
+                            style={{ width: "32px", height: "32px" }}
                           />
                         </Box>
 
