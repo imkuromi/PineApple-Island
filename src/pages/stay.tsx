@@ -15,7 +15,7 @@ export default function Stay() {
   };
 
   const massage = {
-    "& .MuiInputBase-root-MuiOutlinedInput-root": {
+    "& .MuiOutlinedInput-root": {
       borderRadius: 0,
     },
   };
@@ -33,7 +33,7 @@ export default function Stay() {
           <Typography
             variant="h2"
             sx={{
-              marginBottom: "1.5rem",
+              marginBottom: "1rem",
               fontSize: "30px",
               color: "#0E204E",
               textAlign: "center",
@@ -96,7 +96,7 @@ export default function Stay() {
               >
                 Massage
               </InputLabel>
-              <TextField fullWidth multiline rows={4} sx={{ massage }} />
+              <TextField fullWidth multiline rows={4} sx={massage} />
             </Grid>
 
             <Button
