@@ -1,6 +1,5 @@
-import { Box, Button, InputLabel, TextField, Typography } from "@mui/material";
+import {Button, InputLabel, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import Image from "next/image";
 export default function Stay() {
   const textField = {
     "& .MuiInputLabel-outlined": {
