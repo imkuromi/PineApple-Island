@@ -5,7 +5,13 @@ import Image from "next/image";
 export default function What() {
   return (
     <section id="what">
-      <Grid container maxWidth={"xl"} sx={{ marginTop: {xs:'5rem',sm:'5rem',md:'10rem'}  }}>
+      <Grid
+        container
+        sx={{
+          marginTop: { xs: "5rem", sm: "5rem", md: "10rem" },
+          marginX: { md: "5rem", xl: "6rem" },
+        }}
+      >
         <Grid
           container
           size={{ xs: 12, sm: 12 }}
@@ -16,10 +22,10 @@ export default function What() {
           }}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{
               color: "#0E204E",
-              fontSize:'30px',
+              fontSize: "30px",
               textAlign: "center",
               marginBottom: "1.5rem",
             }}
@@ -44,10 +50,10 @@ export default function What() {
                 alt="1"
                 width={900}
                 height={650}
-                style={{ objectFit: "cover",width: "100%" }}
+                style={{ objectFit: "cover", width: "100%" }}
               />
             </Box>
-            <Box sx={{ position: "relative" ,marginBottom:'10rem'}}>
+            <Box sx={{ position: "relative", marginBottom: "10rem" }}>
               <Box
                 sx={{
                   position: "absolute",
@@ -57,19 +63,17 @@ export default function What() {
                   top: "-10rem",
                   left: "9%",
                   width: "80%",
-                  height: "400px",
+                  height: "300px",
                   backgroundColor: "#0E204E",
-                
                 }}
               >
-              <Grid
+                <Grid
                   size={{ xs: 12, sm: 12 }}
                   container
                   justifyContent={"center"}
                   alignItems={"center"}
                   flexDirection={"row"}
-                  rowSpacing={'3rem'}
-                 
+                  rowSpacing={"3rem"}
                 >
                   <Grid size={{ xs: 4, sm: 4 }}>
                     <Box
@@ -77,23 +81,33 @@ export default function What() {
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        width: "46",
-                        height: "52",
                         flexDirection: "column",
                       }}
                     >
-                      <Image
-                        src="/eco-w.svg"
-                        alt="1"
-                        width={46}
-                        height={52}
-                        style={{ objectFit: "cover" }}
-                      />
+                      <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        width="32px"
+                        height="32px"
+                      >
+                        <img
+                          src="/eco-w.svg"
+                          alt="1"
+                          style={{ width: "23px" }}
+                        />
+                      </Box>
+
                       <Typography
                         variant="subtitle2"
-                        sx={{ textAlign: "center", paddingTop: "1.5rem",color:"#FFF",fontSize:'16px' }}
+                        sx={{
+                          textAlign: "center",
+                          paddingTop: "1.5rem",
+                          color: "#FFF",
+                          fontSize: "12px",
+                        }}
                       >
-                       Eco Friendly
+                        Eco Friendly
                       </Typography>
                     </Box>
                   </Grid>
@@ -108,16 +122,27 @@ export default function What() {
                         flexDirection: "column",
                       }}
                     >
-                      <Image
-                        src="/smart-w.svg"
-                        alt="1"
-                        width={46}
-                        height={50}
-                        style={{ objectFit: "cover" }}
-                      />
+                      <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        width="32px"
+                        height="32px"
+                      >
+                        <img
+                          src="/smart-w.svg"
+                          alt="1"
+                          style={{ width: "32px" }}
+                        />
+                      </Box>
                       <Typography
                         variant="subtitle2"
-                        sx={{ textAlign: "center", paddingTop: "1.5rem",color:'white',fontSize:'16px' }}
+                        sx={{
+                          textAlign: "center",
+                          paddingTop: "1.5rem",
+                          color: "white",
+                          fontSize: "12px",
+                        }}
                       >
                         Smart Homes
                       </Typography>
@@ -134,114 +159,158 @@ export default function What() {
                         flexDirection: "column",
                       }}
                     >
-                      <Image
-                        src="/good-w.svg"
-                        alt="1"
-                        width={46}
-                        height={50}
-                        style={{ objectFit: "cover" }}
-                      />
+                      <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        width="32px"
+                        height="32px"
+                      >
+                        <img
+                          src="/good-w.svg"
+                          alt="1"
+                          style={{ width: "32px" }}
+                        />
+                      </Box>
                       <Typography
                         variant="subtitle2"
-                        sx={{ textAlign: "center", paddingTop: "1.5rem",color:'#FFF',fontSize:'16px' }}
+                        sx={{
+                          textAlign: "center",
+                          paddingTop: "1.5rem",
+                          color: "#FFF",
+                          fontSize: "12px",
+                        }}
                       >
                         Good Rates
                       </Typography>
                     </Box>
                   </Grid>
-                <Grid
-                  size={{ xs: 12, sm: 12 }}
-                  container
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  flexDirection={"row"}
-                >
-                  <Grid size={{ xs: 4, sm: 4 }}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        width: "62",
-                        height: "76",
-                        flexDirection: "column",
-                      }}
-                    >
-                      <Image
-                        src="/serviced-w.svg"
-                        alt="1"
-                        width={52}
-                        height={66}
-                        style={{ objectFit: "cover" }}
-                      />
-                      <Typography
-                        variant="subtitle2"
-                        sx={{ textAlign: "center", paddingTop: "1.5rem",color:'#FFF',fontSize:'16px' }}
+                  <Grid
+                    size={{ xs: 12, sm: 12 }}
+                    container
+                    justifyContent={"center"}
+                    alignItems={"center"}
+                    flexDirection={"row"}
+                  >
+                    <Grid size={{ xs: 4, sm: 4 }}>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          width: "62",
+                          height: "76",
+                          flexDirection: "column",
+                        }}
                       >
-                        Serviced Apartment
-                      </Typography>
-                    </Box>
-                  </Grid>
-                  <Grid size={{ xs: 4, sm: 4 }}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        width: "60",
-                        height: "76",
-                        flexDirection: "column",
-                      }}
-                    >
-                      <Image
-                        src="/private-w.svg"
-                        alt="1"
-                        width={50}
-                        height={66}
-                        style={{ objectFit: "cover" }}
-                      />
-                      <Typography
-                        variant="subtitle2"
-                        sx={{ textAlign: "center", paddingTop: "1.5rem",color:'#FFF',fontSize:'16px' }}
+                        <Box
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                          width="32px"
+                          height="32px"
+                        >
+                          <img
+                            src="/serviced-w.svg"
+                            alt="1"
+                            style={{ width: "32px" }}
+                          />
+                        </Box>
+
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            textAlign: "center",
+                            paddingTop: "1.5rem",
+                            color: "#FFF",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Serviced Apartment
+                        </Typography>
+                      </Box>
+                    </Grid>
+                    <Grid size={{ xs: 4, sm: 4 }}>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          width: "60",
+                          height: "76",
+                          flexDirection: "column",
+                        }}
                       >
-                      
-                        Private Security
-                      </Typography>
-                    </Box>
+                        <Box
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                          width="32px"
+                          height="32px"
+                        >
+                          <img
+                            src="/private-w.svg"
+                            alt="1"
+                            style={{ width: "32px" }}
+                          />
+                        </Box>
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            textAlign: "center",
+                            paddingTop: "1.5rem",
+                            color: "#FFF",
+                            fontSize: "12px",
+                          }}
+                        >
+                          Private Security
+                        </Typography>
+                      </Box>
+                    </Grid>
+                    <Grid size={{ xs: 4, sm: 4 }}>
+                      <Box
+                        sx={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                          width: "52",
+                          height: "76",
+                          flexDirection: "column",
+                        }}
+                      >
+                        <Box
+                          display="flex"
+                          justifyContent="center"
+                          alignItems="center"
+                          width="32px"
+                          height="32px"
+                        >
+                          <img
+                            src="/24-w.svg"
+                            alt="1"
+                            style={{ width: "32px", height: "32px" }}
+                          />
+                        </Box>
+
+                        <Typography
+                          variant="subtitle2"
+                          sx={{
+                            textAlign: "center",
+                            paddingTop: "1.5rem",
+                            color: "#FFF",
+                            fontSize: "12px",
+                          }}
+                        >
+                          24/7 Electricity
+                        </Typography>
+                      </Box>
+                    </Grid>
                   </Grid>
-                  <Grid size={{ xs: 4, sm: 4 }}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        width: "52",
-                        height: "76",
-                        flexDirection: "column",
-                      }}
-                    >
-                      <Image
-                        src="/24-w.svg"
-                        alt="1"
-                        width={45}
-                        height={68}
-                        style={{ objectFit: "cover" }}
-                      />
-                      <Typography
-                     variant="subtitle2"
-                     sx={{ textAlign: "center", paddingTop: "1.5rem",color:'#FFF',fontSize:'16px' }}
-                   >
-                        24/7 Electricity
-                      </Typography>
-                    </Box>
-                  </Grid>
-                </Grid>
                 </Grid>
               </Box>
             </Box>
           </Grid>
         </Grid>
-        
 
         <Grid size={{ md: 12 }} marginBottom={"5rem"}>
           <Box
@@ -252,7 +321,10 @@ export default function What() {
               fontSize: "60px",
             }}
           >
-            <Typography variant="h2" sx={{ fontSize: "60px",color:'#0E204E' }}>
+            <Typography
+              variant="h2"
+              sx={{ fontSize: "60px", color: "#0E204E" }}
+            >
               What Pineapple Land Offers
             </Typography>
           </Box>
@@ -265,7 +337,7 @@ export default function What() {
           alignItems={"center"}
           sx={{
             display: { xs: "none", sm: "none", md: "flex" },
-            marginX: {md:'0rem',lg:"6rem"},
+            marginX: { md: "0rem", lg: "6rem" },
           }}
         >
           <Grid size={{ md: 4 }}>
@@ -281,7 +353,7 @@ export default function What() {
                 alt="1"
                 width={900}
                 height={634}
-                style={{ objectFit: "cover",width: "100%" }}
+                style={{ objectFit: "cover", width: "100%" }}
               />
             </Box>
           </Grid>
@@ -314,9 +386,13 @@ export default function What() {
                   height={70}
                   style={{ objectFit: "cover" }}
                 />
-                 <Typography
+                <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
+                  sx={{
+                    textAlign: "center",
+                    paddingTop: "2.5rem",
+                    fontSize: "18px",
+                  }}
                 >
                   Eco Friendly
                 </Typography>
@@ -340,9 +416,13 @@ export default function What() {
                   height={70}
                   style={{ objectFit: "cover" }}
                 />
-                  <Typography
+                <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
+                  sx={{
+                    textAlign: "center",
+                    paddingTop: "2.5rem",
+                    fontSize: "18px",
+                  }}
                 >
                   Smart Homes
                 </Typography>
@@ -366,9 +446,13 @@ export default function What() {
                   height={70}
                   style={{ objectFit: "cover" }}
                 />
-                 <Typography
+                <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
+                  sx={{
+                    textAlign: "center",
+                    paddingTop: "2.5rem",
+                    fontSize: "18px",
+                  }}
                 >
                   Good Rates
                 </Typography>
@@ -383,7 +467,7 @@ export default function What() {
           alignItems={"center"}
           sx={{
             display: { xs: "none", sm: "none", md: "flex" },
-            marginX:{md:'0rem',lg:"6rem"}
+            marginX: { md: "0rem", lg: "6rem" },
           }}
         >
           <Grid container size={{ md: 6 }}>
@@ -405,9 +489,13 @@ export default function What() {
                   height={70}
                   style={{ objectFit: "cover" }}
                 />
-                 <Typography
+                <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
+                  sx={{
+                    textAlign: "center",
+                    paddingTop: "2.5rem",
+                    fontSize: "18px",
+                  }}
                 >
                   Serviced Apartment
                 </Typography>
@@ -433,7 +521,11 @@ export default function What() {
                 />
                 <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
+                  sx={{
+                    textAlign: "center",
+                    paddingTop: "2.5rem",
+                    fontSize: "18px",
+                  }}
                 >
                   Private Security
                 </Typography>
@@ -457,9 +549,13 @@ export default function What() {
                   height={70}
                   style={{ objectFit: "cover" }}
                 />
-                  <Typography
+                <Typography
                   variant="subtitle2"
-                  sx={{ textAlign: "center", paddingTop: "3.125rem",fontSize:"18px" }}
+                  sx={{
+                    textAlign: "center",
+                    paddingTop: "2.5rem",
+                    fontSize: "18px",
+                  }}
                 >
                   24/7 Electricity
                 </Typography>
@@ -492,12 +588,12 @@ export default function What() {
                 alt="1"
                 width={900}
                 height={634}
-                style={{ objectFit: "cover",width: "100%" }}
+                style={{ objectFit: "cover", width: "100%" }}
               />
             </Box>
           </Grid>
         </Grid>
       </Grid>
-      </section>
+    </section>
   );
 }

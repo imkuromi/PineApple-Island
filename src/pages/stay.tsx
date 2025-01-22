@@ -1,14 +1,26 @@
-import { Box, TextField, Typography } from "@mui/material";
+import {Button, InputLabel, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import Image from "next/image";
 export default function Stay() {
+  const textField = {
+    "& .MuiInputLabel-outlined": {
+      color: "#000",
+    },
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#000",
+    },
+    "& .MuiOutlinedInput-root": {
+      borderRadius: 0,
+    },
+  };
+
+  const massage = {
+    "& .MuiOutlinedInput-root": {
+      borderRadius: 0,
+    },
+  };
   return (
     <section id="stay">
-      <Grid
-        container
-        maxWidth={"xl"}
-        sx={{ marginY: { xs: "5rem", sm: "5rem", md: "10rem" } }}
-      >
+      <Grid container sx={{ marginY: { xs: "2rem", sm: "3.5rem", md: "10rem" } }}>
         <Grid
           container
           justifyContent={"center"}
@@ -18,9 +30,9 @@ export default function Stay() {
           sx={{ display: { xs: "grid", sm: "grid", md: "none" } }}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{
-              marginBottom: "1.5rem",
+              marginBottom: "1rem",
               fontSize: "30px",
               color: "#0E204E",
               textAlign: "center",
@@ -28,16 +40,17 @@ export default function Stay() {
           >
             Stay In Touch
           </Typography>
-          <Box
-            sx={{
+         
+            <Typography variant="body1" sx={{
               marginBottom: "1.5rem",
-              fontSize: "20px",
+              fontSize: "16px",
               textAlign: "center",
-            }}
-          >
+              color:'#000000BD'
+            }}>
             If you are interested in finding out more about
             <br /> The Discovery Village, leave a message
-          </Box>
+            </Typography>
+          
           <Grid
             container
             size={{ xs: 12, sm: 12 }}
@@ -72,24 +85,27 @@ export default function Stay() {
               />
             </Grid>
             <Grid size={{ xs: 8, sm: 8 }}>
-              <TextField
-                fullWidth
-                multiline
-                label="Massage"
-                rows={4}
-                variant="standard"
-              />
+              <InputLabel
+                sx={{
+                  display: "flex",
+                  justifyContent: "start",
+                  marginTop: "0.75rem",
+                  marginBottom: "0.45rem",
+                }}
+              >
+                Massage
+              </InputLabel>
+              <TextField fullWidth multiline rows={4} sx={massage} />
             </Grid>
 
-            <Typography
-              variant="body1"
+            <Button
               sx={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 marginX: "25rem",
-                paddingY: "0.75rem",
-                paddingX: "2rem",
+                width:'82px',
+                height:'40px',
                 backgroundColor: "#0E204E",
                 fontSize: "16px",
                 color: "white",
@@ -97,7 +113,7 @@ export default function Stay() {
               }}
             >
               Send
-            </Typography>
+            </Button>
           </Grid>
         </Grid>
         <Grid
@@ -127,6 +143,7 @@ export default function Stay() {
               label="Name"
               type="name"
               autoComplete="current-name"
+              sx={textField}
             />
           </Grid>
           <Grid size={{ sm: 12 }}>
@@ -136,6 +153,7 @@ export default function Stay() {
               label="Phone No"
               type="phone"
               autoComplete="current-phone"
+              sx={textField}
             />
           </Grid>
           <Grid size={{ sm: 12 }}>
@@ -145,28 +163,36 @@ export default function Stay() {
               label="Email"
               type="email"
               autoComplete="current-email"
+              sx={textField}
             />
           </Grid>
           <Grid size={{ sm: 12 }}>
-            <TextField fullWidth multiline label="Massage" rows={4} />
+            <TextField
+              fullWidth
+              multiline
+              label="Massage"
+              sx={textField}
+              rows={4}
+            />
           </Grid>
 
-          <Typography
-            variant="body1"
+          <Button
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               marginX: "25rem",
-              paddingY: "0.5rem",
-              paddingX: "2rem",
+              width: "143px",
+              height: "48px",
+              textAlign: "center",
               backgroundColor: "#0E204E",
-              fontSize: "16px",
+              fontSize: "18px",
               color: "white",
+              borderRadius: 0,
             }}
           >
             Send
-          </Typography>
+          </Button>
         </Grid>
       </Grid>
     </section>

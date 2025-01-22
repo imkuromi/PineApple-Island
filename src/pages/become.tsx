@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 export default function Become() {
@@ -19,21 +19,21 @@ export default function Become() {
         >
           <Box
             flexDirection={"column"}
+            paddingTop="2rem"
+            paddingBottom="2.5rem"
             sx={{
               display: { xs: "flex", sm: "flex", md: "none" },
               justifyContent: "center",
               alignItems: "center",
               backgroundColor: " #0E204E",
-              height: "350px",
-              width: "900px",
-              lineHeight: "2rem",
+              height: "262px",
+              width: "100%",
             }}
           >
             <Typography
-              variant="h1"
+              variant="h2"
               sx={{
-                fontSize: "30px",
-                paddingBottom: "2rem",
+                fontSize: "24px",
                 textAlign: "center",
                 color: "#FFF",
               }}
@@ -44,7 +44,8 @@ export default function Become() {
               variant="body1"
               sx={{
                 fontSize: "16px",
-                paddingBottom: "2rem",
+                paddingTop: "1rem",
+                paddingBottom: "1.5rem",
                 textAlign: "center",
                 color: "#FFF",
                 lineHeight: "2rem",
@@ -56,11 +57,13 @@ export default function Become() {
             </Typography>
             <Typography
               variant="body2"
+              textAlign="center"
+              alignContent="center"
               sx={{
-                paddingY: "1rem",
-                paddingX: "1.75rem",
+                width: "103px",
+                height: "40px",
                 backgroundColor: "#FFF",
-                fontSize: "20px",
+                fontSize: "16px",
                 color: "#0E204E",
                 borderRadius: "0.5rem",
               }}
@@ -103,18 +106,19 @@ export default function Become() {
                 <br /> happiness, a place you’ll love to live and
                 <br /> an opportunity to build a home.
               </Typography>
-              <Typography
-                variant="body1"
+              <Button
                 sx={{
-                  paddingY: "1rem",
-                  paddingX: "4rem",
+                  fontWeight: "300",
+                  paddingY: "0.8445rem",
+                  paddingX: "4.903rem",
                   backgroundColor: "#0E204E",
                   fontSize: "20px",
                   color: "#FFF",
+                  borderRadius: 0,
                 }}
               >
                 Join Now
-              </Typography>
+              </Button>
             </Box>
           </Grid>
           <Grid

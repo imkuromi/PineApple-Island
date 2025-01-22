@@ -19,6 +19,8 @@ export default function About() {
     <section id="about">
       <Grid
         container
+        justifyContent={"center"}
+        alignItems={"center"}
         sx={{ marginTop: { xs: "2rem", sm: "4rem", md: "10rem" } }}
       >
         <Grid
@@ -30,9 +32,9 @@ export default function About() {
           paddingY={"2.5rem"}
         >
           <Typography
-            variant="h1"
+            variant="h2"
             sx={{
-              fontSize: { xs: "26px", sm: "30px" },
+              fontSize: { xs: "24px", sm: "30px" },
               textAlign: "center",
               color: "#0E204E",
             }}
@@ -93,7 +95,7 @@ export default function About() {
                 display: { xs: "flex", sm: "flex", md: "none" },
                 justifyContent: "center",
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%)",
-                height: { xs: "90%", sm: "95%", md: "100%" },
+                height: { xs: "90%", sm: "95%" },
                 width: "100%",
                 position: "relative",
               }}
@@ -102,8 +104,8 @@ export default function About() {
                 src="/2.jpg"
                 alt="2"
                 width={900}
-                height={618}
-                style={{ objectFit: "cover",width:"100%" }}
+                height={550}
+                style={{ objectFit: "cover", width: "100%" }}
               />
 
               <Box
@@ -117,7 +119,7 @@ export default function About() {
                   left: 0,
                   height: "100%",
                   backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  paddingY: "2rem",
+                  paddingY: "1rem",
                   paddingX: { xs: "2rem", sm: "5rem" },
                 }}
               >
@@ -129,6 +131,7 @@ export default function About() {
                     fontSize: "16px",
                     textAlign: "center",
                     marginBottom: "2rem",
+                    paddingX: "1.5rem",
                   }}
                 >
                   Pineapple Island is the most sought-after community in Ibadan

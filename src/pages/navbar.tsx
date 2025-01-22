@@ -3,10 +3,63 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import { Button, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Button, Divider, Drawer, List, ListItem } from "@mui/material";
+import Hamburger from "hamburger-react";
 
 function Navbar() {
+  const [isOpen, setIsopen] = React.useState(false);
+
+  const toggleDrawer =
+    (anchor: "right", open: boolean) =>
+    (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
+      ) {
+        return;
+      }
+      setIsopen(open);
+    };
+
+  const list = (anchor: "right") => (
+    <Box>
+      <List>
+        <ListItem sx={{ display: "flex", flexDirection: "column" }}>
+          <Hamburger toggled={isOpen} toggle={setIsopen} />
+          <Typography
+            variant="subtitle1"
+            component="a"
+            padding="2rem"
+            sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
+            href="#about"
+          >
+            About
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            component="a"
+            padding="2rem"
+            sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
+            href="#what"
+          >
+            What we do
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            component="a"
+            padding="2rem"
+            sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
+            href="#galleries"
+          >
+            Project
+          </Typography>
+        </ListItem>
+      </List>
+      <Divider />
+    </Box>
+  );
+
   return (
     <AppBar
       position="static"
@@ -14,10 +67,16 @@ function Navbar() {
     >
       <Grid
         container
-        height="10.1875rem"
-        sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem" } }}
+        sx={{
+          marginX: {
+            sm: "0rem",
+            md: "2rem",
+            xl: "6.25rem",
+          },
+          height: { xs: "7.875rem", md: "10.5rem",xl: "10.5rem" }
+        }}
       >
-        <Grid size={3}>
+        <Grid size={3} container justifyContent="start" alignItems=" start">
           <Box paddingTop="3.125rem" sx={{ color: "#0E204E" }}>
             <Typography
               variant="h1"
@@ -29,7 +88,7 @@ function Navbar() {
             </Typography>
           </Box>
         </Grid>
-        <Grid container size={6} justifyContent="center" paddingTop="5.0625rem">
+        <Grid container size={6} justifyContent="center" paddingTop="5rem">
           <Box
             sx={{
               display: { xs: "none", sm: "none", md: "block" },
@@ -39,7 +98,7 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              padding="2rem"
+              paddingX="2rem"
               sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#about"
             >
@@ -48,7 +107,7 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              padding="2rem"
+              paddingX="2rem"
               sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#what"
             >
@@ -57,7 +116,7 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              padding="2rem"
+              paddingX="2rem"
               sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#galleries"
             >
@@ -69,6 +128,7 @@ function Navbar() {
           container
           size={3}
           justifyContent="end"
+          alignItems="start"
           sx={{
             paddingTop: {
               xs: "3.125rem",
@@ -92,15 +152,21 @@ function Navbar() {
           >
             Get in Touch
           </Button>
-
-          <MenuIcon
+          <Button
             sx={{
-              display: { sm: "flex", md: "none" },
-              padding: "0.9375rem",
-              fontSize: { xs: "2rem", sm: "2.5rem" },
-              color: "#0E204E",
+              display: { xs: "flex", sm: "flex", md: "none" },
             }}
-          />
+            onClick={toggleDrawer("right", true)}
+          >
+            <Hamburger color="#0E204E" toggled={isOpen} toggle={setIsopen} />
+          </Button>
+          <Drawer
+            anchor={"right"}
+            open={isOpen}
+            onClose={toggleDrawer("right", false)}
+          >
+            {list("right")}
+          </Drawer>
         </Grid>
       </Grid>
     </AppBar>
