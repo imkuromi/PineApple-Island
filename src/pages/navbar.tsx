@@ -73,7 +73,7 @@ function Navbar() {
             md: "2rem",
             xl: "6.25rem",
           },
-          height: { xs: "7.875rem", xl: "10.5rem" }
+          height: { xs: "7.875rem", md: "10.5rem",xl: "10.5rem" }
         }}
       >
         <Grid size={3} container justifyContent="start" alignItems=" start">
