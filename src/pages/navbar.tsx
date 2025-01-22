@@ -3,13 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import {
-  Button,
-  Divider,
-  Drawer,
-  List,
-  ListItem,
-} from "@mui/material";
+import { Button, Divider, Drawer, List, ListItem } from "@mui/material";
 import Hamburger from "hamburger-react";
 
 function Navbar() {
@@ -73,7 +67,14 @@ function Navbar() {
     >
       <Grid
         container
-        sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem",height:{xs:'7.875rem',xl:'10.1875rem'} } }}
+        sx={{
+          marginX: {
+            sm: "0rem",
+            md: "2rem",
+            xl: "6.25rem",
+          },
+          height: { xs: "7.875rem", xl: "10.5rem" }
+        }}
       >
         <Grid size={3} container justifyContent="start" alignItems=" start">
           <Box paddingTop="3.125rem" sx={{ color: "#0E204E" }}>
@@ -87,7 +88,7 @@ function Navbar() {
             </Typography>
           </Box>
         </Grid>
-        <Grid container size={6} justifyContent="center" paddingTop="5.0625rem">
+        <Grid container size={6} justifyContent="center" paddingTop="5rem">
           <Box
             sx={{
               display: { xs: "none", sm: "none", md: "block" },
@@ -97,7 +98,7 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              padding="2rem"
+              paddingX="2rem"
               sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#about"
             >
@@ -106,7 +107,7 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              padding="2rem"
+              paddingX="2rem"
               sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#what"
             >
@@ -115,7 +116,7 @@ function Navbar() {
             <Typography
               variant="subtitle1"
               component="a"
-              padding="2rem"
+              paddingX="2rem"
               sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
               href="#galleries"
             >
@@ -151,7 +152,12 @@ function Navbar() {
           >
             Get in Touch
           </Button>
-          <Button onClick={toggleDrawer("right", true)}>
+          <Button
+            sx={{
+              display: { xs: "flex", sm: "flex", md: "none" },
+            }}
+            onClick={toggleDrawer("right", true)}
+          >
             <Hamburger color="#0E204E" toggled={isOpen} toggle={setIsopen} />
           </Button>
           <Drawer

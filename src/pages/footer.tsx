@@ -126,7 +126,7 @@ export default function Footer() {
           Pineapple Island
         </Typography>
 
-        <Typography variant="body1" sx={{ fontSize: "16px" }}>
+        <Typography variant="body1" textAlign="center" sx={{ fontSize: "16px" }}>
           &copy; Copyright 2021 Glowdsgn All Rights Reserved
         </Typography>
       </Box>
