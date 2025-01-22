@@ -2,52 +2,52 @@ import { Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import Image from "next/image";
 
-const box :any = [];
+const box: any = [];
 for (let times = 0; times < 5; times++) {
   box.push(
-  <Grid container  size={{ md: 11,lg:10}} justifyContent={"end"}>
-    <Typography variant="body1"
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        backgroundColor: "#0E3F3333",
-        width: "542px",
-        height: "46px",
-        paddingX: "1rem",
-      
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur
-      <Image
-        src="/check.svg"
-        alt="1"
-        width={15}
-        height={15}
-        style={{ objectFit: "cover" }}
-      />
-    </Typography>
-     <Typography variant="body1"
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        backgroundColor: "#FFFFFF",
-        width: "542px",
-        height: "55px",
-        paddingX: "1rem",
-      }}
-    >
-      Lorem ipsum dolor sit amet, consectetur
-      <Image
-        src="/check.svg"
-        alt="1"
-        width={15}
-        height={15}
-        style={{ objectFit: "cover" }}
-      />
-    </Typography>
-
+    <Grid container size={{ md: 11, lg: 10 }} justifyContent={"end"}>
+      <Typography
+        variant="body1"
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          backgroundColor: "#0E3F3333",
+          width: "542px",
+          height: "46px",
+          paddingX: "1rem",
+        }}
+      >
+        Lorem ipsum dolor sit amet, consectetur
+        <Image
+          src="/check.svg"
+          alt="1"
+          width={15}
+          height={15}
+          style={{ objectFit: "cover" }}
+        />
+      </Typography>
+      <Typography
+        variant="body1"
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          backgroundColor: "#FFFFFF",
+          width: "542px",
+          height: "55px",
+          paddingX: "1rem",
+        }}
+      >
+        Lorem ipsum dolor sit amet, consectetur
+        <Image
+          src="/check.svg"
+          alt="1"
+          width={15}
+          height={15}
+          style={{ objectFit: "cover" }}
+        />
+      </Typography>
     </Grid>
   );
 }
@@ -59,15 +59,13 @@ export default function Amazing() {
         container
         maxWidth={"xl"}
         sx={{ marginTop: "10rem", marginX: { md: "5rem", lg: "15rem" } }}
+        display={{ xs: "none", sm: "none", md: "flex" }}
       >
         <Grid
           container
           size={{ md: 12 }}
           justifyContent={"center"}
           alignItems={"center"}
-          sx={{
-            display: { xs: "none", sm: "none", md: "flex" },
-          }}
         >
           <Grid size={{ md: 4 }}>
             <Box
@@ -97,13 +95,21 @@ export default function Amazing() {
             ></Box>
           </Grid>
           <Grid container size={{ md: 6 }} justifyContent={"end"}>
-            <Grid container size={{ md: 11,lg:10 }} justifyContent={"center"} >
-              <Typography noWrap variant="h2" sx={{fontSize:{ md: '45.5px',lg:'50px'} ,color:'#0E204E',paddingY:'2.5rem',marginLeft:{md:'2rem',lg:'5rem'}}}  >
+            <Grid container size={{ md: 11, lg: 10 }} justifyContent={"center"}>
+              <Typography
+                noWrap
+                variant="h2"
+                sx={{
+                  fontSize: { md: "45.5px", lg: "50px" },
+                  color: "#0E204E",
+                  paddingY: "2.5rem",
+                }}
+              >
                 Amazing Future
               </Typography>
             </Grid>
-            <Grid  container  size={{ md: 11,lg:10}} justifyContent={"end"} >
-            {box}
+            <Grid container size={{ md: 11, lg: 10 }} justifyContent={"center"}>
+              {box}
             </Grid>
           </Grid>
         </Grid>

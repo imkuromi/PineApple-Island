@@ -77,6 +77,7 @@ export default function Become() {
           size={{ md: 12 }}
           justifyContent={"start"}
           alignItems={"center"}
+          bgcolor="blue"
         >
           <Grid size={{ md: 6 }}>
             <Box

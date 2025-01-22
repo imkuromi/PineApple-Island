@@ -19,6 +19,8 @@ export default function About() {
     <section id="about">
       <Grid
         container
+        justifyContent={"center"}
+        alignItems={"center"}
         sx={{ marginTop: { xs: "2rem", sm: "4rem", md: "10rem" } }}
       >
         <Grid
