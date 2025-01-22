@@ -73,8 +73,8 @@ function Navbar() {
     >
       <Grid
         container
-        height="10.1875rem"
-        sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem" } }}
+        
+        sx={{ marginX: { sm: "0rem", md: "2rem", xl: "6.25rem" } ,height:{xs:'7.875rem',xl:'10.1875rem'}}}
       >
         <Grid size={3} container justifyContent="start" alignItems=" start">
           <Box paddingTop="3.125rem" sx={{ color: "#0E204E" }}>
