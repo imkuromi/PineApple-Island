@@ -3,10 +3,69 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid2";
-import { Button, IconButton } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import {
+  Button,
+  Divider,
+  Drawer,
+  List,
+  ListItem,
+} from "@mui/material";
+import Hamburger from "hamburger-react";
 
 function Navbar() {
+  const [isOpen, setIsopen] = React.useState(false);
+
+  const toggleDrawer =
+    (anchor: "right", open: boolean) =>
+    (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
+      ) {
+        return;
+      }
+      setIsopen(open);
+    };
+
+  const list = (anchor: "right") => (
+    <Box>
+      <List>
+        <ListItem sx={{ display: "flex", flexDirection: "column" }}>
+          <Hamburger toggled={isOpen} toggle={setIsopen} />
+          <Typography
+            variant="subtitle1"
+            component="a"
+            padding="2rem"
+            sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
+            href="#about"
+          >
+            About
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            component="a"
+            padding="2rem"
+            sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
+            href="#what"
+          >
+            What we do
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            component="a"
+            padding="2rem"
+            sx={{ fontSize: { md: "1.125rem", xl: "1.25rem" } }}
+            href="#galleries"
+          >
+            Project
+          </Typography>
+        </ListItem>
+      </List>
+      <Divider />
+    </Box>
+  );
+
   return (
     <AppBar
       position="static"
@@ -93,15 +152,16 @@ function Navbar() {
           >
             Get in Touch
           </Button>
-
-          <MenuIcon
-            sx={{
-              display: { sm: "flex", md: "none" },
-              padding: "0.9375rem",
-              fontSize: { xs: "2rem", sm: "2.5rem" },
-              color: "#0E204E",
-            }}
-          />
+          <Button onClick={toggleDrawer("right", true)}>
+            <Hamburger color="#0E204E" toggled={isOpen} toggle={setIsopen} />
+          </Button>
+          <Drawer
+            anchor={"right"}
+            open={isOpen}
+            onClose={toggleDrawer("right", false)}
+          >
+            {list("right")}
+          </Drawer>
         </Grid>
       </Grid>
     </AppBar>
